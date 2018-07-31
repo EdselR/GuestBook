@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/narindo_bg">
+
+
+    <EditText
+        android:id="@+id/dispatcherName"
+        android:layout_width="800dip"
+        android:layout_height="80dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/backImageThree"
+        android:layout_marginTop="433dp"
+        android:background="@drawable/rounded_black_button"
+        android:fontFamily="@font/opensans_italic"
+        android:hint="Dispatcher Name: e.g. your name"
+        android:inputType="textPersonName"
+        android:paddingBottom="20dip"
+        android:paddingEnd="80dip"
+        android:paddingStart="80dip"
+        android:paddingTop="20dp"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/backImageThree"
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/back"
+        android:elevation="10dp"/>
+
+    <TextView
+        android:layout_width="116dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/backImageThree"
+        android:layout_toEndOf="@+id/backImageThree"
+        android:fontFamily="@font/opensans_bold"
+        android:text="Back"
+        android:textAlignment="center"
+        android:textSize="38sp" />
+
+
+    <TextView
+        android:id="@+id/packageInfo"
+        android:layout_width="500dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="277dp"
+        android:fontFamily="@font/opensans_bold"
+        android:paddingTop="25dp"
+        android:text="Package Information"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/sender"
+        android:layout_width="705dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="412dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/rounded_black_button"
+        android:fontFamily="@font/opensans_italic"
+        android:hint="Sender(name/company)"
+        android:inputType="textPersonName"
+        android:paddingBottom="20dip"
+        android:paddingEnd="80dip"
+        android:paddingStart="80dip"
+        android:paddingTop="20dp"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/recipient"
+        android:layout_width="705dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="412dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/rounded_black_button"
+        android:fontFamily="@font/opensans_italic"
+        android:hint="Recipient (name/company)"
+        android:inputType="textPersonName"
+        android:paddingBottom="20dip"
+        android:paddingEnd="80dip"
+        android:paddingStart="80dip"
+        android:paddingTop="20dp"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/courierService"
+        android:layout_width="800dip"
+        android:layout_height="80dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/dispatcherName"
+        android:layout_marginBottom="363dp"
+        android:background="@drawable/rounded_black_button"
+        android:fontFamily="@font/opensans_italic"
+        android:hint="Courier Service: e.g. TIKI, JNE, GOJEK, etc."
+        android:inputType="textPersonName"
+        android:paddingBottom="20dip"
+        android:paddingEnd="80dip"
+        android:paddingStart="80dip"
+        android:paddingTop="20dp"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/packageDescription"
+        android:layout_width="800dip"
+        android:layout_height="80dip"
+        android:layout_above="@+id/saveInfo"
+        android:layout_alignStart="@+id/dispatcherName"
+        android:background="@drawable/rounded_black_button"
+        android:fontFamily="@font/opensans_italic"
+        android:hint="Package Description: e.g. Documents, etc."
+        android:inputType="textPersonName"
+        android:paddingBottom="20dip"
+        android:paddingEnd="80dip"
+        android:paddingStart="80dip"
+        android:paddingTop="20dp"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/deliveryTypeLabel"
+        android:layout_width="500dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/packageInfo"
+        android:layout_marginEnd="218dp"
+        android:fontFamily="@font/opensans_bold"
+        android:paddingTop="25dp"
+        android:text="Delivery Type"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/packageRadio"
+        android:layout_width="600dip"
+        android:layout_height="60dip"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="164dp"
+        android:layout_marginTop="391dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <RadioButton
+            android:id="@+id/radio_sending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dip"
+            android:fontFamily="@font/opensans_semibold_italic"
+            android:paddingLeft="15dip"
+            android:text="Sending"
+            android:textSize="32sp" />
+
+
+        <RadioButton
+            android:id="@+id/radio_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dip"
+            android:checked="true"
+            android:fontFamily="@font/opensans_semibold_italic"
+            android:paddingLeft="15dip"
+            android:text="Receiving"
+            android:textSize="32sp" />
+
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/saveInfo"
+        android:layout_width="500dip"
+        android:layout_height="100dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/deliveryTypeLabel"
+        android:layout_marginBottom="153dp"
+        android:background="@drawable/rounded_redbutton"
+        android:fontFamily="@font/opensans_regular"
+        android:text="Save Info"
+        android:textAlignment="center"
+        android:textColor="@color/kiosonWhite"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="600dip"
+        android:layout_height="180dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/deliveryTypeLabel"
+        android:layout_marginTop="58dp"
+        app:srcCompat="@drawable/logo" />
+
+</RelativeLayout>

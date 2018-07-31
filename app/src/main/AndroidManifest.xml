@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.narindo.guestbook">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppFullScreenTheme">
+        <activity android:name=".homeScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".signInActivity"
+            android:label="@string/title_activity_sign_in"
+            android:parentActivityName=".homeScreen" />
+        <activity
+            android:name=".signOutActivity"
+            android:label="@string/title_activity_sign_out"
+            android:parentActivityName=".homeScreen" />
+        <activity
+            android:name=".guestListActivity"
+            android:label="@string/guestList_title"
+            android:parentActivityName=".homeScreen" />
+        <activity
+            android:name=".PhotoId.PhotoIdActivity"
+            android:label="Take Picture"
+            android:parentActivityName=".signInActivity" />
+        <activity android:name=".deliveryPage" />
+        <activity android:name=".packageList"></activity>
+    </application>
+
+</manifest>

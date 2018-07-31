@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/narindo_bg">
+
+
+    <Button
+        android:id="@+id/backImageTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/back"
+        android:elevation="10dp"/>
+
+    <TextView
+        android:layout_width="116dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/backImageTwo"
+        android:layout_toEndOf="@+id/backImageTwo"
+        android:fontFamily="@font/opensans_bold"
+        android:text="Back"
+        android:textAlignment="center"
+        android:textSize="38sp" />
+
+    <TextView
+        android:id="@+id/visitorLabel"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/backImageTwo"
+        android:layout_below="@+id/imageView2"
+        android:fontFamily="@font/opensans_bold"
+        android:paddingTop="25dp"
+        android:text="@string/infoLabel"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/photoID"
+        android:layout_width="396dp"
+        android:layout_height="264dp"
+        android:layout_below="@+id/backImageTwo"
+        android:layout_gravity="center"
+        android:layout_marginStart="544dp"
+        android:background="@drawable/rounded_black_white_button"
+        android:src="@drawable/icon_foto_small" />
+
+
+    <Button
+        android:id="@+id/takePhoto"
+        android:layout_width="350dip"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/photoID"
+        android:layout_alignStart="@+id/backImageTwo"
+        android:background="@drawable/rounded_blackbutton"
+        android:drawableStart="@drawable/icon_foto_inverted"
+        android:gravity="center"
+        android:paddingEnd="15dip"
+        android:paddingStart="25dip"
+        android:paddingTop="5dip"
+        android:text="Take Photo of ID"
+        android:textColor="@color/kiosonWhite"
+        android:textSize="22sp" />
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="800dip"
+        android:layout_height="80dip"
+        android:layout_alignBottom="@+id/visitorPurposeLabel"
+        android:layout_alignStart="@+id/backImageTwo"
+        android:background="@drawable/rounded_black_button"
+        android:fontFamily="@font/opensans_italic"
+        android:hint="@string/nameLabel"
+        android:inputType="textPersonName"
+        android:paddingBottom="20dip"
+        android:paddingEnd="80dip"
+        android:paddingStart="80dip"
+        android:paddingTop="20dp"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/company"
+        android:layout_width="800dip"
+        android:layout_height="80dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/backImageTwo"
+        android:layout_marginBottom="301dp"
+        android:background="@drawable/rounded_black_button"
+        android:fontFamily="@font/opensans_italic"
+        android:hint="@string/companyLabel"
+        android:inputType="textPersonName"
+        android:paddingBottom="20dip"
+        android:paddingEnd="80dip"
+        android:paddingStart="80dip"
+        android:paddingTop="20dp"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="800dip"
+        android:layout_height="80dip"
+        android:layout_above="@+id/signIn2"
+        android:layout_alignStart="@+id/backImageTwo"
+        android:background="@drawable/rounded_black_button"
+        android:fontFamily="@font/opensans_italic"
+        android:hint="@string/emailLabel"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="20dip"
+        android:paddingEnd="80dip"
+        android:paddingStart="80dip"
+        android:paddingTop="20dp"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="800dip"
+        android:layout_height="80dip"
+        android:layout_alignBottom="@+id/signIn2"
+        android:layout_alignStart="@+id/backImageTwo"
+        android:background="@drawable/rounded_black_button"
+        android:fontFamily="@font/opensans_italic"
+        android:hint="@string/phoneLabel"
+        android:inputType="phone"
+        android:paddingBottom="20dip"
+        android:paddingEnd="80dip"
+        android:paddingStart="80dip"
+        android:paddingTop="20dp"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/visitorTypeLabel"
+        android:layout_width="500dip"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/takePhoto"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="227dp"
+        android:fontFamily="@font/opensans_bold"
+        android:paddingTop="25dp"
+        android:text="@string/visitorLabel"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioGroup"
+        android:layout_width="600dip"
+        android:layout_height="60dip"
+        android:layout_alignBottom="@+id/takePhoto"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="158dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <RadioButton
+            android:id="@+id/radio_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dip"
+            android:fontFamily="@font/opensans_semibold_italic"
+            android:paddingLeft="15dip"
+            android:text="@string/radioBtn_one"
+            android:textSize="32sp" />
+
+
+        <RadioButton
+            android:id="@+id/radio_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dip"
+            android:checked="true"
+            android:fontFamily="@font/opensans_semibold_italic"
+            android:paddingLeft="15dip"
+            android:text="@string/radioBtn_two"
+            android:textSize="32sp" />
+
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/visitorPurposeLabel"
+        android:layout_width="500dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/visitorTypeLabel"
+        android:layout_marginBottom="401dp"
+        android:fontFamily="@font/opensans_bold"
+        android:paddingTop="25dp"
+        android:text="@string/purposeLabel"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+
+    <Spinner
+        android:id="@+id/spinnerOne"
+        android:layout_width="500dip"
+        android:layout_height="80dip"
+        android:layout_alignStart="@+id/visitorTypeLabel"
+        android:layout_below="@+id/visitorPurposeLabel"
+        android:layout_marginTop="-401dp"
+        android:background="@drawable/spinner_dropdown_rounded_red"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/others"
+        android:layout_width="700dip"
+        android:layout_height="80dip"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/company"
+        android:layout_marginEnd="89dp"
+        android:layout_marginTop="-307dp"
+        android:background="@drawable/rounded_black_button"
+        android:ems="10"
+        android:fontFamily="@font/opensans_italic"
+        android:hint="@string/othersField"
+        android:inputType="textPersonName"
+        android:paddingBottom="20dip"
+        android:paddingEnd="80dip"
+        android:paddingStart="80dip"
+        android:paddingTop="20dp"
+        android:textSize="32sp" />
+
+
+    <Button
+        android:id="@+id/signIn2"
+        android:layout_width="500dip"
+        android:layout_height="100dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/visitorTypeLabel"
+        android:layout_marginBottom="93dp"
+        android:background="@drawable/rounded_redbutton"
+        android:fontFamily="@font/opensans_regular"
+        android:onClick="saveData"
+        android:text="@string/signIn_string"
+        android:textAlignment="center"
+        android:textColor="@color/kiosonWhite"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="600dip"
+        android:layout_height="180dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/radioGroup"
+        android:layout_marginTop="48dp"
+        app:srcCompat="@drawable/logo" />
+
+</RelativeLayout>

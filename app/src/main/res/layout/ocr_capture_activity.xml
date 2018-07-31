@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <com.narindo.guestbook.PhotoId.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.narindo.guestbook.PhotoId.GraphicOverlay
+            android:id="@+id/graphicOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.narindo.guestbook.PhotoId.CameraSourcePreview>
+
+    <Button
+        android:id="@+id/takePicktureButton"
+        android:layout_width="269dp"
+        android:layout_height="96dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="67dp"
+        android:background="@drawable/rounded_redbutton"
+        android:fontFamily="@font/opensans_regular"
+        android:padding="5dip"
+        android:text="Take Photo"
+        android:textColor="@color/kiosonWhite"
+        android:textSize="30sp" />
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/narindo_bg">
+
+    <Button
+        android:id="@+id/guestList"
+        android:layout_width="230dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="68dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/rounded_black_button"
+        android:drawableStart="@drawable/guestlist_icon"
+        android:fontFamily="@font/opensans_light"
+        android:paddingStart="25dip"
+        android:paddingEnd="20dip"
+        android:onClick="guestListForm"
+        android:text="@string/guestList"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/deliveryListBtn"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/guestList"
+        android:layout_marginEnd="349dp"
+        android:background="@drawable/rounded_black_button"
+        android:drawableStart="@drawable/package_icon"
+        android:fontFamily="@font/opensans_light"
+        android:onClick="deliveryListBtn"
+        android:paddingStart="20dip"
+        android:text="Delivery List"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="600dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="133dp"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/signOut"
+        android:layout_marginStart="376dp"
+        android:background="@drawable/rounded_redbutton"
+        android:fontFamily="@font/opensans_regular"
+        android:onClick="signInForm"
+        android:text="@string/signIn_string"
+        android:textAlignment="center"
+        android:textColor="@color/kiosonWhite"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/signOut"
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="345dp"
+        android:layout_marginEnd="347dp"
+        android:background="@drawable/rounded_redbutton"
+        android:fontFamily="@font/opensans_regular"
+        android:textSize="30sp"
+        android:onClick="signOutForm"
+        android:text="@string/signOut_String"
+        android:textAlignment="center"
+        android:textColor="@color/kiosonWhite" />
+
+    <Button
+        android:id="@+id/deliveryBtn"
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="87dp"
+        android:background="@drawable/rounded_blackbutton"
+        android:fontFamily="@font/opensans_light"
+        android:onClick="deliveryPageForm"
+        android:text="Delivery"
+        android:textColor="@color/kiosonWhite"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="1100dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/opensans_light"
+        android:text="Welcome to Narindo Solusi Komunikasi, we hope you enjoy your visit."
+        android:textAlignment="center"
+        android:textSize="32sp" />
+
+</RelativeLayout>

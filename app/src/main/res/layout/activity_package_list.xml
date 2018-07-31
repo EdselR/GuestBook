@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.narindo.guestbook.homeScreen"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/narindo_bg">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/backImageFour"
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/back"
+            android:elevation="10dp" />
+
+        <TextView
+            android:layout_width="116dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/backImageFour"
+            android:fontFamily="@font/opensans_bold"
+            android:paddingTop="5dip"
+            android:text="Back"
+            android:textAlignment="center"
+            android:textSize="38sp" />
+
+        <ImageView
+            android:id="@+id/narindoLogo"
+            android:layout_width="601dp"
+            android:layout_height="180dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="end"
+            android:layout_marginEnd="150dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/packageList"
+            android:layout_width="271dp"
+            android:layout_height="63dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="150dip"
+            android:fontFamily="@font/opensans_bold"
+            android:text="Delivery List"
+            android:textAlignment="center"
+            android:textColor="@color/narindoBlack"
+            android:textSize="40sp" />
+
+
+        <Spinner
+            android:id="@+id/spinnerThreeDir"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="97dp"
+            android:background="@drawable/spinner_dropdown_rounded_black"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center" />
+
+        <Spinner
+            android:id="@+id/spinnerThreeSort"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="462dp"
+            android:background="@drawable/spinner_dropdown_rounded_black"
+            android:spinnerMode="dropdown" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewTwo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+
+</LinearLayout>

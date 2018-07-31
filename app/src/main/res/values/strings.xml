@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Guest Book</string>
+    <string name="signIn_string">Sign-In</string>
+    <string name="signOut_String">Sign-Out</string>
+    <string name="title_activity_home_screen2">homeScreen2</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_sign_in">Sign-In Form</string>
+    <string name="radioBtn_one">Personal</string>
+    <string name="radioBtn_two">Business</string>
+    <string name="companyLabel">Company Name</string>
+    <string name="nameLabel">Name</string>
+    <string name="emailLabel">Email</string>
+    <string name="phoneLabel">Phone Number</string>
+    <string name="visitorLabel">Visitor Type</string>
+    <string name="othersField">Please Specify.</string>
+    <string name="purposeLabel">Visiting Purpose</string>
+    <string name="infoLabel">Visitor Info</string>
+
+    <string name="signInDetails">Please enter your sign-in details:</string>
+    <string name="title_activity_sign_out">Sign-Out Form</string>
+    <string name="guestList">Guest List</string>
+    <string name="guestList_title">Guest List History</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="ok">Ok</string>
+    <string name="signInLabel">Sign In Time</string>
+    <string name="signOutLabel">Sign Out Time</string>
+
+    <string-array name="sort_types">
+        <item>Sort By</item>
+        <item>Name</item>
+        <item>Sign In Time</item>
+        <item>Sign Out Time</item>
+        <item>Company</item>
+        <item>Visiting Type</item>
+    </string-array>
+
+</resources>

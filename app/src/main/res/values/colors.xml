@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="kiosonOrange">#f8991d</color>
+    <color name="kiosonWhite">#ffffff</color>
+    <color name="kiosonHint">#b7dade</color>
+    <color name="kiosonBlue">#1f95ba</color>
+    <color name="kiosonBlueDark">#1594b9</color>
+    <color name="kiosonTex">#535353</color>
+    <color name="kiosonGray">#b2b0b3</color>
+    <color name="kiosonDarkGrey">#808080</color>
+    <color name="kiosonSoftGrey">#f3f3f3</color>
+    <color name="kiosonMainColor">#fafafa</color>
+    <color name="narindoBlack">#212121</color>
+    <color name="kiosonBg">#f5f5f5</color>
+    <color name="narindoRed">#b22325</color>
+</resources>
