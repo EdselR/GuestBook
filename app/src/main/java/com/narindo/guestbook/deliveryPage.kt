@@ -139,6 +139,7 @@ class deliveryPage : AppCompatActivity() {
             dialogNotif(this, null, "Package Information is Successfully saved","OK")
 
             saveInfoBtn.isEnabled = true
+
         }
     }
 }
