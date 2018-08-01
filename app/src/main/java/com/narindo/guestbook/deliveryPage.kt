@@ -80,6 +80,7 @@ class deliveryPage : AppCompatActivity() {
     }
 
     fun savePackageData(){
+
         val myAnim = AnimationUtils.loadAnimation(this, R.anim.bounce)
 
         // Use bounce interpolator with amplitude 0.2 and frequency 20
@@ -88,6 +89,8 @@ class deliveryPage : AppCompatActivity() {
         myAnim.interpolator = interpolator
 
         saveInfoBtn.startAnimation(myAnim)
+
+
 
         val dispatcher = dispatcherET.text.toString()
         val service = serviceET.text.toString()
@@ -120,6 +123,9 @@ class deliveryPage : AppCompatActivity() {
 
             saveInfoBtn.isEnabled = false
 
+            var loading = ProgressDialogHelper(this)
+            loading.show("Loading")
+
             val settings = FirebaseFirestoreSettings.Builder()
                     .setPersistenceEnabled(true)
                     .build()
@@ -127,13 +133,14 @@ class deliveryPage : AppCompatActivity() {
             val db = FirebaseFirestore.getInstance()
             db.firestoreSettings = settings
 
-            var loading = ProgressDialogHelper(this)
-            loading.show("Loading")
+
 
             addPackageData(db,"Package", newPackage,loading)
 
             //set the intent
             val intent = Intent(this, homeScreen::class.java)
+
+            loading.dismiss()
 
             //set the dialog
             dialogNotif(this, intent, "Package Information is Successfully saved","OK")

@@ -186,6 +186,9 @@ class signInActivity : AppCompatActivity() {
             dialogNotif(this, null, "Please take a picture of your ID","OK")
         }
         else{
+            var loading = ProgressDialogHelper(this)
+            loading.show("Loading")
+
             val button = findViewById<Button>(R.id.signIn2)
             button.isEnabled = false
 
@@ -196,8 +199,7 @@ class signInActivity : AppCompatActivity() {
             val db = FirebaseFirestore.getInstance()
             db.firestoreSettings = settings
 
-            var loading = ProgressDialogHelper(this)
-            loading.show("Loading")
+
 
             addData(db,"Guests", newGuest,loading)
 
@@ -211,6 +213,8 @@ class signInActivity : AppCompatActivity() {
 
             //set the intent
             val intent = Intent(this, homeScreen::class.java)
+
+            loading.dismiss()
 
             //set the dialog
             dialogNotif(this, intent, "Guest is successfully signed in","OK")

@@ -79,6 +79,9 @@ class signOutActivity : AppCompatActivity() {
         }
         else {
 
+            var loading = ProgressDialogHelper(this)
+            loading.show("Loading")
+
             val settings = FirebaseFirestoreSettings.Builder()
                     .setPersistenceEnabled(true)
                     .build()
@@ -86,8 +89,6 @@ class signOutActivity : AppCompatActivity() {
             val db = FirebaseFirestore.getInstance()
             db.firestoreSettings = settings
 
-            var loading = ProgressDialogHelper(this)
-            loading.show("Loading")
 
             db.collection("visitor_key")
                     .document(newGuest.email)
@@ -125,7 +126,11 @@ class signOutActivity : AppCompatActivity() {
                             dialogNotif(this, null, "Guest could not be found","OK")
                         }
                     })
+
+            loading.dismiss()
         }
+
+
 
         button.isEnabled = true
     }
