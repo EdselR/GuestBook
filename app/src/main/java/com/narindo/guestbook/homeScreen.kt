@@ -88,6 +88,7 @@ class homeScreen : AppCompatActivity() {
         val intent = Intent(this, deliveryPage::class.java)
 
         startActivity(intent)
+        
     }
 
     //Listener for sign in button, opens the sign in form
