@@ -106,7 +106,7 @@ class signOutActivity : AppCompatActivity() {
                                     updateSignOut(db, guestColl, newGuest, loading)
 
                                     val intent = Intent(this, homeScreen::class.java)
-                                    dialogNotif(this, null, "Guest is successfully signed out","OK")
+                                    dialogNotif(this, intent, "Guest is successfully signed out","OK")
                                 } else {
                                     loading.dismiss()
                                     dialogNotif(this, null, "Guest could not be found","OK")

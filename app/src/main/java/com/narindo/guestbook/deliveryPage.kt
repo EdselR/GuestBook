@@ -136,7 +136,7 @@ class deliveryPage : AppCompatActivity() {
             val intent = Intent(this, homeScreen::class.java)
 
             //set the dialog
-            dialogNotif(this, null, "Package Information is Successfully saved","OK")
+            dialogNotif(this, intent, "Package Information is Successfully saved","OK")
 
             saveInfoBtn.isEnabled = true
 

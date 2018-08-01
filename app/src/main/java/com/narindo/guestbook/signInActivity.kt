@@ -213,7 +213,7 @@ class signInActivity : AppCompatActivity() {
             val intent = Intent(this, homeScreen::class.java)
 
             //set the dialog
-            dialogNotif(this, null, "Guest is successfully signed in","OK")
+            dialogNotif(this, intent, "Guest is successfully signed in","OK")
 
             button.isEnabled = true
         }
